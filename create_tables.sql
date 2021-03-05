@@ -32,6 +32,9 @@ insert into supplier values (7, 'Vince');
 insert into supplier values (8, 'Bill');
 insert into supplier values (9, 'Donna');
 
+
+
+
                        
 drop table if exists color; 
 create table color (color_id integer, 

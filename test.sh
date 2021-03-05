@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Creating sequence..."
-cat <(echo 'CREATE SEQUENCE part_number_seq  START WITH 50000;')|psql -h 127.0.0.1 -p $PGPORT $USER"_DB"
+#cat <(echo 'CREATE SEQUENCE part_number_seq  START WITH 50000;')|psql -h 127.0.0.1 -p $PGPORT $USER"_DB"
 
 echo "Creating trigger and procedure..."
 psql -h 127.0.0.1 -p $PGPORT $USER"_DB" < triggers.sql
